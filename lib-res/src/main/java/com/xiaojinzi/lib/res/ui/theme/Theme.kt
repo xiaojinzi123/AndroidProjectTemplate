@@ -1,6 +1,5 @@
-package com.xiaojinzi.template.ui.theme
+package com.xiaojinzi.lib.res.ui.theme
 
-import android.app.Activity
 import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

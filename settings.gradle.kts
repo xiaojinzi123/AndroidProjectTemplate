@@ -25,4 +25,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "ProjectTemplate"
 include(":app")
+include(":lib-res")
 include(":module-base")

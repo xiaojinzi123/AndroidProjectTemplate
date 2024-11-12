@@ -11,7 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.xiaojinzi.component.anno.RouterAnno
 import com.xiaojinzi.module.base.AppRouterConfig
-import com.xiaojinzi.template.ui.theme.ProjectTemplateTheme
+import com.xiaojinzi.lib.res.ui.theme.ProjectTemplateTheme
 
 @RouterAnno(
     hostAndPath = AppRouterConfig.APP_TEST1,

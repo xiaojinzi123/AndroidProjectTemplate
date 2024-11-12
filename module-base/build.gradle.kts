@@ -1,3 +1,5 @@
+import com.android.build.gradle.internal.scope.ProjectInfo.Companion.getBaseName
+
 plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
@@ -35,6 +37,9 @@ android {
     buildFeatures {
         compose = true
     }
+    composeOptions {
+        kotlinCompilerExtensionVersion = libs.versions.kotlin.compiler.extension.get()
+    }
 }
 
 ksp {
@@ -42,6 +47,16 @@ ksp {
 }
 
 dependencies {
+
+    api(project(":lib-res"))
+
+    testApi(libs.junit)
+    androidTestApi(libs.androidx.junit)
+    androidTestApi(libs.androidx.espresso.core)
+    androidTestApi(platform(libs.androidx.compose.bom))
+    androidTestApi(libs.androidx.ui.test.junit4)
+    debugApi(libs.androidx.ui.tooling)
+    debugApi(libs.androidx.ui.test.manifest)
 
     api(libs.component.core)
     ksp(libs.component.compiler)
@@ -54,12 +69,20 @@ dependencies {
     api(libs.androidx.ui.graphics)
     api(libs.androidx.ui.tooling.preview)
     api(libs.androidx.material3)
-    testApi(libs.junit)
-    androidTestApi(libs.androidx.junit)
-    androidTestApi(libs.androidx.espresso.core)
-    androidTestApi(platform(libs.androidx.compose.bom))
-    androidTestApi(libs.androidx.ui.test.junit4)
-    debugApi(libs.androidx.ui.tooling)
-    debugApi(libs.androidx.ui.test.manifest)
+
+    api(libs.coil.compose)
+    api(libs.coil.svg)
+    api(libs.coil.gif)
+    api(libs.coil.video)
+
+    api(libs.lottie.compose)
+
+    api(libs.xiaojinzi.android.support.init)
+    api(libs.xiaojinzi.android.support.bean)
+    api(libs.xiaojinzi.android.support.ktx)
+    api(libs.xiaojinzi.android.support.activitystack)
+    api(libs.xiaojinzi.android.support.compose)
+
+    // api(libs.xiaojinzi.android.module.ffmpeg)
 
 }
