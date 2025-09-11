@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
+
 plugins {
     alias(libs.plugins.android.application)
     id("com.xiaojinzi.kcomponent.plugin")
@@ -8,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.xiaojinzi.template"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.xiaojinzi.template"
@@ -32,9 +34,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
     }
     buildFeatures {
         buildConfig = true

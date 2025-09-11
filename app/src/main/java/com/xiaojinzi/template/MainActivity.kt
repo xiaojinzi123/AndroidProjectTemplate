@@ -1,5 +1,6 @@
 package com.xiaojinzi.template
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -55,6 +56,7 @@ class MainActivity : ComponentActivity() {
                             Router
                                 .with(context = this@MainActivity)
                                 .hostAndPath(hostAndPath = AppRouterConfig.APP_TEST1)
+                                .addIntentFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                                 .forward()
                         },
                     ) {

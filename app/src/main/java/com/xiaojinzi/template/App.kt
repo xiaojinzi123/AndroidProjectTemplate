@@ -1,7 +1,9 @@
 package com.xiaojinzi.template
 
+import android.app.Activity
 import android.app.Application
 import android.content.Context
+import android.os.Bundle
 import com.xiaojinzi.component.Component
 import com.xiaojinzi.component.Config
 import com.xiaojinzi.module.base.support.DevelopHelper
