@@ -1,5 +1,5 @@
 [versions]
-agp = "8.13.0"
+agp = "8.11.0"
 kotlin = "2.2.10"
 ksp = "2.2.10-2.0.2"
 coreKtx = "1.17.0"
@@ -11,9 +11,11 @@ activityCompose = "1.11.0"
 composeBom = "2025.09.00"
 appcompat = "1.7.1"
 material = "1.13.0"
+compose = "1.9.1"
+coil = "2.7.0"
 kcomponent = "v2.1.1"
-android-support = "v1.0-beta227"
-xiaojinzi-module = "v1.0-beta53"
+xiaojinzi-support = "v1.0-beta227"
+xiaojinzi-module = "4beccf45fb"
 kotlin-compiler-extension = "1.5.15"
 
 [libraries]
@@ -59,13 +61,13 @@ coil-compose = { group = "io.coil-kt", name = "coil-compose", version.ref = "coi
 
 lottie-compose = { group = "com.airbnb.android", name = "lottie-compose", version = "6.6.0" }
 
-xiaojinzi-android-support-ktx = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-ktx", version.ref = "xiaojinzi-android-support" }
-xiaojinzi-android-support-ktx-retrofit = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-ktx-retrofit", version.ref = "xiaojinzi-android-support" }
-xiaojinzi-android-support-bean = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-bean", version.ref = "xiaojinzi-android-support" }
-xiaojinzi-android-support-annotation = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-annotation", version.ref = "xiaojinzi-android-support" }
-xiaojinzi-android-support-activitystack = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-activity-stack", version.ref = "xiaojinzi-android-support" }
-xiaojinzi-android-support-init = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-init", version.ref = "xiaojinzi-android-support" }
-xiaojinzi-android-support-compose = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-compose", version.ref = "xiaojinzi-android-support" }
+xiaojinzi-android-support-ktx = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-ktx", version.ref = "xiaojinzi-support" }
+xiaojinzi-android-support-ktx-retrofit = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-ktx-retrofit", version.ref = "xiaojinzi-support" }
+xiaojinzi-android-support-bean = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-bean", version.ref = "xiaojinzi-support" }
+xiaojinzi-android-support-annotation = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-annotation", version.ref = "xiaojinzi-support" }
+xiaojinzi-android-support-activitystack = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-activity-stack", version.ref = "xiaojinzi-support" }
+xiaojinzi-android-support-init = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-init", version.ref = "xiaojinzi-support" }
+xiaojinzi-android-support-compose = { group = "com.github.xiaojinzi123.AndroidSupport", name = "lib-compose", version.ref = "xiaojinzi-support" }
 
 # 组件化的支持
 component-core = { group = "com.github.xiaojinzi123.KComponent", name = "kcomponent", version.ref = "kcomponent" }
