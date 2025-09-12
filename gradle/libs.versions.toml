@@ -16,6 +16,7 @@ coil = "2.7.0"
 kcomponent = "v2.1.1"
 xiaojinzi-support = "v1.0-beta227"
 xiaojinzi-module = "4beccf45fb"
+xiaojinzi-android-reactive = "v1.0.4"
 kotlin-compiler-extension = "1.5.15"
 
 [libraries]
@@ -42,6 +43,10 @@ xiaojinzi-android-module-ffmpeg = { group = "com.github.xiaojinzi123.AndroidModu
 xiaojinzi-android-module-ali-oss = { group = "com.github.xiaojinzi123.AndroidModule", name = "module-ali-oss", version.ref = "xiaojinzi-module" }
 xiaojinzi-android-module-ali-pay = { group = "com.github.xiaojinzi123.AndroidModule", name = "module-ali-pay", version.ref = "xiaojinzi-module" }
 xiaojinzi-android-module-wx-sdk = { group = "com.github.xiaojinzi123.AndroidModule", name = "module-wx-sdk", version.ref = "xiaojinzi-module" }
+
+xiaojinzi-android-reactive-core = { group = "com.github.xiaojinzi123.AndroidReactive", name = "reactive-core", version.ref = "xiaojinzi-android-reactive" }
+xiaojinzi-android-reactive-template = { group = "com.github.xiaojinzi123.AndroidReactive", name = "reactive-template", version.ref = "xiaojinzi-android-reactive" }
+xiaojinzi-android-reactive-template-compose = { group = "com.github.xiaojinzi123.AndroidReactive", name = "reactive-template-compose", version.ref = "xiaojinzi-android-reactive" }
 
 kotlin-parcelize-runtime = { group = "org.jetbrains.kotlin", name = "kotlin-parcelize-runtime", version.ref = "kotlin" }
 

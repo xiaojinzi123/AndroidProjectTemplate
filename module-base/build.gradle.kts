@@ -91,6 +91,10 @@ dependencies {
     api(libs.xiaojinzi.android.module.ali.pay)
     api(libs.xiaojinzi.android.module.wx.sdk)
 
+    api(libs.xiaojinzi.android.reactive.core)
+    api(libs.xiaojinzi.android.reactive.template)
+    api(libs.xiaojinzi.android.reactive.template.compose)
+
     testApi(libs.junit)
 
     androidTestApi(libs.androidx.junit)
