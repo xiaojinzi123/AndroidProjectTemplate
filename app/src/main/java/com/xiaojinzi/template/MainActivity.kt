@@ -76,7 +76,6 @@ class MainActivity : ComponentActivity() {
                         composition = composition,
                         iterations = LottieConstants.IterateForever,
                     )
-
                 }
             }
         }
