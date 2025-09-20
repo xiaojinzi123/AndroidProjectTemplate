@@ -10,6 +10,9 @@
 /.idea/AndroidProjectSystem.xml
 /.idea/copilot.data.migration.agent.xml
 /.idea/copilot.data.migration.edit.xml
+/.idea/copilot.data.migration.ask.xml
+/.idea/copilot.data.migration.ask2agent.xml
+/.idea/inspectionProfiles/Project_Default.xml
 .DS_Store
 /build
 /captures
