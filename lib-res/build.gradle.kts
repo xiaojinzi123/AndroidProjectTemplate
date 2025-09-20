@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.xiaojinzi.lib.res"
-    compileSdk = 35
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
         minSdk = 24

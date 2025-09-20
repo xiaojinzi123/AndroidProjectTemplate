@@ -10,7 +10,7 @@ plugins {
 
 android {
     namespace = "com.xiaojinzi.template"
-    compileSdk = 36
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
 
     defaultConfig {
         applicationId = "com.xiaojinzi.template"
