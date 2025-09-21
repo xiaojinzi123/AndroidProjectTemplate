@@ -22,7 +22,7 @@ import com.airbnb.lottie.compose.rememberLottieComposition
 import com.xiaojinzi.component.impl.Router
 import com.xiaojinzi.lib.res.ui.APP_PADDING_NORMAL
 import com.xiaojinzi.lib.res.ui.AppHeightSpace
-import com.xiaojinzi.lib.res.ui.theme.ProjectTemplateTheme
+import com.xiaojinzi.lib.res.ui.theme.AppTheme
 import com.xiaojinzi.module.base.AppRouterConfig
 import com.xiaojinzi.module.base.view.compose.AppbarNormalM3
 import com.xiaojinzi.support.ktx.nothing
@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ProjectTemplateTheme {
+            AppTheme {
                 Scaffold (
                     topBar = {
                         AppbarNormalM3(
@@ -102,7 +102,7 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    ProjectTemplateTheme {
+    AppTheme {
         Greeting("Android")
     }
 }

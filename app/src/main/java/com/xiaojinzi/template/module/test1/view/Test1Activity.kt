@@ -12,7 +12,7 @@ import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.ui.Modifier
 import com.xiaojinzi.component.anno.RouterAnno
-import com.xiaojinzi.lib.res.ui.theme.ProjectTemplateTheme
+import com.xiaojinzi.lib.res.ui.theme.AppTheme
 import com.xiaojinzi.module.base.AppRouterConfig
 import com.xiaojinzi.reactive.template.view.BusinessContentView
 import com.xiaojinzi.support.ktx.nothing
@@ -25,7 +25,7 @@ class Test1Activity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ProjectTemplateTheme {
+            AppTheme {
                 BusinessContentView<Test1ViewModel> { vm ->
                     Column(
                         modifier = Modifier
