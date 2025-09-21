@@ -1,8 +1,12 @@
-package com.xiaojinzi.module.base.view.compose
+package com.xiaojinzi.module.base.view
 
+import android.os.Build
 import android.os.Bundle
+import android.view.WindowManager
+import androidx.activity.enableEdgeToEdge
 import androidx.annotation.CallSuper
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.ViewModelProvider
 import com.xiaojinzi.component.Component
@@ -25,6 +29,14 @@ open class BaseBusinessAct<VM : BaseViewModel> : AppCompatActivity() {
 
     @CallSuper
     override fun onCreate(savedInstanceState: Bundle?) {
+        enableEdgeToEdge()
+        WindowCompat.setDecorFitsSystemWindows(window, false)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
+            window.isNavigationBarContrastEnforced = false
+        } else {
+            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
+            window.navigationBarColor = android.graphics.Color.TRANSPARENT
+        }
         super.onCreate(savedInstanceState)
         mContext = this
         val viewModelClass = getViewModelClass()
