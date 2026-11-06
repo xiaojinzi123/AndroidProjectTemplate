@@ -1,4 +1,4 @@
-import com.android.build.gradle.internal.scope.ProjectInfo.Companion.getBaseName
+@file:Suppress("DEPRECATION")
 
 plugins {
     alias(libs.plugins.android.library)
@@ -31,14 +31,14 @@ android {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
     }
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_17.toString()
-    }
     buildFeatures {
         compose = true
     }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.kotlin.compiler.extension.get()
+}
+
+kotlin {
+    compilerOptions {
+        jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
 }
 
@@ -69,6 +69,7 @@ dependencies {
     api(libs.androidx.ui.graphics)
     api(libs.androidx.ui.tooling.preview)
     api(libs.androidx.material3)
+    api(libs.compose.material.icons.core)
 
     api(libs.coil.compose)
     api(libs.coil.svg)

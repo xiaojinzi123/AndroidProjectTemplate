@@ -1,4 +1,4 @@
-import org.gradle.kotlin.dsl.support.kotlinCompilerOptions
+@file:Suppress("DEPRECATION")
 
 plugins {
     alias(libs.plugins.android.application)
@@ -15,7 +15,7 @@ android {
     defaultConfig {
         applicationId = "com.xiaojinzi.template"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 37
         versionCode = 1
         versionName = "1.0"
 
@@ -38,9 +38,6 @@ android {
     buildFeatures {
         buildConfig = true
         compose = true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion = libs.versions.kotlin.compiler.extension.get()
     }
 }
 
