@@ -1,5 +1,5 @@
 [versions]
-agp = "9.3.3"
+agp = "9.5.1"
 android-compileSdk = "37"
 kotlin = "2.4.21"
 ksp = "2.3.13"
@@ -85,7 +85,6 @@ compose-material-icons-core = { group = "androidx.compose.material", name = "mat
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 android-library = { id = "com.android.library", version.ref = "agp" }
-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
 kotlin-ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }
 

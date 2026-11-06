@@ -1,9 +1,6 @@
-@file:Suppress("DEPRECATION")
-
 plugins {
     alias(libs.plugins.android.application)
     id("com.xiaojinzi.kcomponent.plugin")
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.ksp)
 }

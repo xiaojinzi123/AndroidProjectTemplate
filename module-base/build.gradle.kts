@@ -1,8 +1,5 @@
-@file:Suppress("DEPRECATION")
-
 plugins {
     alias(libs.plugins.android.library)
-    alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.ksp)
 }
@@ -50,13 +47,13 @@ dependencies {
 
     api(project(":lib-res"))
 
-    testApi(libs.junit)
-    androidTestApi(libs.androidx.junit)
-    androidTestApi(libs.androidx.espresso.core)
-    androidTestApi(platform(libs.androidx.compose.bom))
-    androidTestApi(libs.androidx.ui.test.junit4)
-    debugApi(libs.androidx.ui.tooling)
-    debugApi(libs.androidx.ui.test.manifest)
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 
     api(libs.component.core)
     ksp(libs.component.compiler)
@@ -96,13 +93,13 @@ dependencies {
     api(libs.xiaojinzi.android.reactive.template)
     api(libs.xiaojinzi.android.reactive.template.compose)
 
-    testApi(libs.junit)
+    testImplementation(libs.junit)
 
-    androidTestApi(libs.androidx.junit)
-    androidTestApi(libs.androidx.espresso.core)
-    androidTestApi(platform(libs.androidx.compose.bom))
-    androidTestApi(libs.androidx.ui.test.junit4)
-    debugApi(libs.androidx.ui.tooling)
-    debugApi(libs.androidx.ui.test.manifest)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.ui.tooling)
+    debugImplementation(libs.androidx.ui.test.manifest)
 
 }
